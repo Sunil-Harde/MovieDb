@@ -1,0 +1,152 @@
+.movie {
+    color: ;
+    cursor: pointer;
+}
+
+.spin {
+    margin-top: -18%;
+    margin-left: 3rem;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    border: 5px solid black;
+    border-top: 5px solid transparent;
+    animation: ani 1s linear infinite;
+}
+.menu{
+    margin-right: 15px;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(69, 69, 70);
+}
+
+@keyframes ani {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card1 {
+    width: 98%;
+    height: 22rem;
+    background: linear-gradient(60deg, rgb(5, 10, 5) 0%, rgb(12, 50, 78, ) 65%, rgb(10, 10, 10) 100%);
+}
+
+.movie_Detail_info p span {
+    font-weight: bold;
+}
+
+.img {
+    border-radius: 5px;
+    margin-left: 2%;
+    width: 110%;
+    height: 100%;
+}
+
+
+.movie_Detail {
+    margin-bottom: -10rem;
+}
+
+
+@media (max-width:995px) {
+    .movie_Detail {
+        margin-top: -3rem;
+        container: none;
+    }
+
+    .movie_Detail_info h1 {
+        font-size: 2rem;
+    }
+    .navbar-expand-lg .navbar-nav .menu {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+    
+}
+.cast_info{
+    margin-top: -6rem;
+}
+@media (max-width:850px) {
+    .movie_Detail_img_poster_path{
+        height: 23rem !important;
+    }
+}
+
+@media (max-width:770px) {
+    .movie_Detail_img_poster_path {
+        height: 22rem !important;
+        width: 18rem;
+    }
+
+    .cast_info{
+        margin-top: 4rem;
+    }
+
+    .movie_Detail_info {
+        margin-top: -180px;
+    }
+
+
+    .movie_Detail_info h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .movie_Detail_info p,
+    h3 {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width:680px) {
+    .movie_Detail_info h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:575px) {
+    .movies-par {
+        width:50%;
+    }
+
+    .movies-par h5 {
+        font-size: .8rem;
+    }
+
+    .movies-par h6 {
+        font-size: .6rem;
+    }
+
+    .movie_Detail_info h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:550px) {
+    .movie_Detail_info {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+@media (max-width:370px) {
+
+    .movie_Detail_img_poster_path{
+        height: 20rem !important;
+        width: 15rem;
+        margin-left: 10px;
+    }
+
+    .movie_Detail_info h1 {
+        font-size: 1rem;
+        margin-left: -20px;
+        margin-top: -200px;
+    }
+
+    .movie_Detail_info {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+}
