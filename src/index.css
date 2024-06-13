@@ -7,6 +7,7 @@
     color: ;
 }
 
+
 .spin {
     margin-top: -18%;
     margin-left: 3rem;
@@ -25,7 +26,6 @@
 }
 
 
-
 .menu {
     margin-right: 15px;
     display: block;
@@ -39,29 +39,24 @@
     margin-top: -6rem;
 }
 
-
-.card1 {
-    width: 98%;
-    height: 22rem;
-    background: linear-gradient(60deg, rgb(5, 10, 5) 0%, rgb(12, 50, 78, ) 65%, rgb(10, 10, 10) 100%);
-}
-
 .movie_Detail_info p span {
     font-weight: bold;
 }
-
-.img {
-    border-radius: 5px;
-    margin-left: 2%;
-    width: 110%;
-    height: 100%;
-}
-
 
 .movie_Detail {
     margin-bottom: -10rem;
 }
 
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: rgb(26, 25, 25);
+    height: 2rem;
+    margin-top: 2rem;
+}
+
+/* End Footer */
 
 @media (max-width:995px) {
     .movie_Detail {
@@ -163,11 +158,4 @@
         margin-left: -40px;
         margin-right: -40px;
     }
-}
-
-.footer{
-    width: 100%;
-    background-color: rgb(26, 25, 25);
-    height: 2rem;
-    margin-top: 2rem;
 }
