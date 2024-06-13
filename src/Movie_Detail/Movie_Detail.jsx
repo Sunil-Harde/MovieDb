@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../Navbar/NavBar';
+import Footer from '../Footer/Footer';
+
+
 
 function MovieDetail() {
   const { id } = useParams();
@@ -49,7 +52,7 @@ function MovieDetail() {
   return (
     <div className='bg-dark min-vh-100'>
       <Navbar />
-      <div className='container-flued text-light' style={{ marginTop: "rem" }}>
+      <div className='container-flued text-light' >
         {movie ? (
           <div className=''>
             <div className='m-5 movie_Detail '>
@@ -92,7 +95,10 @@ function MovieDetail() {
                 ))}
               </div>
             </div>
+
+            
           </div>
+
         ) : (
           <div className='d-flex align-items-center justify-content-center bg-dark min-vh-100' >
             <p className='spin'></p>
@@ -100,8 +106,7 @@ function MovieDetail() {
         )}
 
       </div>
-
-
+      <Footer/>
     </div>
   );
 }
