@@ -19,9 +19,9 @@ function NavScrollExample() {
     };
 
     return (
-        <Navbar expand="lg" className="bg-body-tertiary" style={{ background: "black" }}>
+        <Navbar expand="lg" className="nav_Background navbar-dark">
             <Container>
-                <Navbar.Brand href="#" >MovieDb </Navbar.Brand>
+                <Link className='text-light fs-3 text-decoration-none ' to="/" >MovieDb </Link>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -29,9 +29,9 @@ function NavScrollExample() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Link className='menu' to="/">Popular</Link>
-                        <Link className="menu" to="/Top_Rated">Top Rated</Link>
-                        <Link className="menu" to="/Upcoming_Movie">Upcoming</Link>
+                        <Link className='menu text-secondary' to="/">Popular</Link>
+                        <Link className="menu text-secondary" to="/Top_Rated">Top Rated</Link>
+                        <Link className="menu text-secondary" to="/Upcoming_Movie">Upcoming</Link>
                     </Nav>
                     <Form className="d-flex" onSubmit={handleSearch}>
                         <Form.Control
@@ -40,6 +40,7 @@ function NavScrollExample() {
                             className="me-2"
                             aria-label="Search"
                             onChange={(e) => setSearchInput(e.target.value)}
+                            required                
                         />
                         <Button type="submit" variant="secondary">Search</Button>
                     </Form>

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../Navbar/NavBar';
+import Footer from '../Footer/Footer';
+
 
 function Top_Rated() {
     const [movies, setMovies] = useState([]);
@@ -79,6 +81,7 @@ function Top_Rated() {
         <div className='bg-dark min-vh-100'>
             <Navbar />
             <div className='container mt-5'>
+            <h4 className='text-light pb-4'>Top Rated Movies</h4>
                 {movies.length ? (
                     <div>
                         <div className='movie-list'>
@@ -124,6 +127,7 @@ function Top_Rated() {
 
                 )}
             </div>
+            <Footer/>
         </div>
     );
 }

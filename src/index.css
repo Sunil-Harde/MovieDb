@@ -1,5 +1,10 @@
+.nav_Background {
+    background-color: rgb(26, 25, 25);
+}
+
 .movie {
     cursor: pointer;
+    color: ;
 }
 
 .spin {
@@ -12,7 +17,16 @@
     border-top: 5px solid transparent;
     animation: ani 1s linear infinite;
 }
-.menu{
+
+@keyframes ani {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.menu {
     margin-right: 15px;
     display: block;
     padding: 5px;
@@ -20,11 +34,11 @@
     color: rgb(69, 69, 70);
 }
 
-@keyframes ani {
-    to {
-        transform: rotate(360deg);
-    }
+
+.cast_info {
+    margin-top: -6rem;
 }
+
 
 .card1 {
     width: 98%;
@@ -58,17 +72,17 @@
     .movie_Detail_info h1 {
         font-size: 2rem;
     }
+
     .navbar-expand-lg .navbar-nav .menu {
         padding-right: var(--bs-navbar-nav-link-padding-x);
         padding-left: var(--bs-navbar-nav-link-padding-x);
     }
-    
+
 }
-.cast_info{
-    margin-top: -6rem;
-}
+
+
 @media (max-width:850px) {
-    .movie_Detail_img_poster_path{
+    .movie_Detail_img_poster_path {
         height: 23rem !important;
     }
 }
@@ -79,12 +93,12 @@
         width: 18rem;
     }
 
-    .cast_info{
-        margin-top: 4rem;
+    .cast_info {
+        margin-top: 3rem;
     }
 
     .movie_Detail_info {
-        margin-top: -180px;
+        margin-top: -9rem;
     }
 
 
@@ -107,7 +121,7 @@
 
 @media (max-width:575px) {
     .movies-par {
-        width:50%;
+        width: 50%;
     }
 
     .movies-par h5 {
@@ -132,7 +146,7 @@
 
 @media (max-width:370px) {
 
-    .movie_Detail_img_poster_path{
+    .movie_Detail_img_poster_path {
         height: 20rem !important;
         width: 15rem;
         margin-left: 10px;
@@ -145,8 +159,15 @@
     }
 
     .movie_Detail_info {
+        margin-top: 1rem;
         margin-left: -40px;
         margin-right: -40px;
     }
 }
 
+.footer{
+    width: 100%;
+    background-color: rgb(26, 25, 25);
+    height: 2rem;
+    margin-top: 2rem;
+}

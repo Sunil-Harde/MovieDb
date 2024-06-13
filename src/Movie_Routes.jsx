@@ -14,9 +14,7 @@ function Movie_Routes() {
                 <Route path='/Upcoming_Movie' element={<Upcoming_Movie />} />
                 <Route path="/movie/:id" element={<Movie_Detail />} />
                 <Route path="/Search_Moive" element={<Search_Moive />} />
-
             </Routes>
-
         </div>
     );
 }

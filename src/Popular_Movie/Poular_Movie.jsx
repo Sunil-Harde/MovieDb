@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../Navbar/NavBar';
+import Footer from '../Footer/Footer';
 
 function Popular_Movie() {
     const [movies, setMovies] = useState([]);
@@ -72,7 +73,7 @@ function Popular_Movie() {
             <div className='bg-dark'>
                 <Navbar />
                 <div className='d-flex align-items-center justify-content-center min-vh-100 bg-dark'>
-                    <p className='text-light' style={{ marginTop: "-5rem" }}>hii</p>
+                    <p className='text-light' style={{ marginTop: "-5rem" }}>{error}</p>
                 </div>
             </div>
         );
@@ -82,6 +83,7 @@ function Popular_Movie() {
         <div className='bg-dark min-vh-100'>
             <Navbar />
             <div className='container mt-5'>
+                <h4 className='text-light pb-4'>Popular Movies</h4>
                 {movies.length ? (
                     <div>
                         <div className='movie-list'>
@@ -126,7 +128,9 @@ function Popular_Movie() {
                     </div>
 
                 )}
+
             </div>
+            <Footer />
         </div>
     );
 }
